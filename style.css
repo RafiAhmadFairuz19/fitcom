@@ -1,0 +1,153 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+/* =============================== VARIABEL =============================== */
+:root {
+    --warna-utama: #399918;
+    --pendukung: #ECFFE6;
+    --hover: #D5ED9F;
+    --tinggi-gambar-card: 180px;
+    --lebar-gambar-card: 100%;
+    --lebar-card: 180px ;
+}
+body {
+    font-family: "Quicksand", sans-serif;
+    height: 2000px;
+    overflow-x: auto;
+}
+
+/* ======================================================================== */
+
+
+
+/* =============================== REBOOT STYLE BOOTSTRAP =============================== */
+.bg-success,.btn-success {
+    background-color: var(--warna-utama) !important;
+}
+
+.offcanvas {
+    height: 70vh !important;
+}
+/* ======================================================================== */
+
+
+
+
+/* =============================== NAVBAR =============================== */
+nav input:focus {
+   outline: 0;
+}
+
+/* ======================================================================== */
+
+
+
+
+
+/* =============================== CAROUSEL =============================== */
+
+.carousel img {
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+}
+/* ======================================================================== */
+
+
+
+/* =============================== KATEGORI =============================== */
+
+.kotak-kategori {
+    width: 90px;
+    height: 90px;
+    background-color: var(--pendukung);
+    transition: 0.2s;
+}
+.kotak-kategori img {
+    width: 48px;
+    height: 48px;
+}
+
+
+.kotak:hover .kotak-kategori {
+    background-color: var(--hover);
+}
+/* ======================================================================== */
+
+
+/* =============================== PROMO =============================== */
+
+.promo {
+    width: 85%;
+    background-color: var(--hover);
+    overflow-x: auto;
+}
+.kotak-promo {
+    min-width: 600px;
+}
+.card img {
+    width: var(--lebar-gambar-card);
+    height: var(--tinggi-gambar-card);
+    object-fit: cover;
+}
+.card {
+    width: var(--lebar-card) !important;
+    transition: 0.2s;
+}
+.card:hover {
+    transform: translateY(-4px);
+}
+.card span {
+    font-size: 13px;
+}
+
+
+/* ======================================================================== */
+
+
+@media screen and (max-width: 767px) { 
+
+    .kotak-kategori {
+        width: 95px;
+        height: 95px;
+    }
+    .kotak-kategori img {
+        width: 30px;
+        height: 30px;
+    }
+    .promo {
+        width: 100%;
+    }
+ }
+
+
+@media screen and (min-width: 768px) and (max-width:991px){ 
+    .kotak-kategori {
+        width: 100px;
+        height: 100px;
+    }
+    .kotak-kategori img {
+        width: 30px;
+        height: 30px;
+    }
+    .promo {
+        width: 100%;
+    }
+ }
+
+
+@media screen and (min-width: 992px) and (max-width:1999px){ 
+ .promo {
+        width: 100%;
+    }
+ }
+
+
+@media screen and (min-width: 1200px) and (max-width:1399px) { 
+
+ }
+
+
+@media screen and (min-width: 1400px) { 
+
+ }
