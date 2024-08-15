@@ -38,6 +38,12 @@ body {
 nav input:focus {
    outline: 0;
 }
+.logo {
+    color: var(--warna-utama);
+}
+.logo:hover {
+    color: var(--warna-utama);
+}
 
 /* ======================================================================== */
 
