@@ -12,8 +12,9 @@
 }
 body {
     font-family: "Quicksand", sans-serif;
-    height: 2000px;
+   
     overflow-x: auto;
+    background-color: #FFF7FC;
 }
 
 /* ======================================================================== */
@@ -93,6 +94,8 @@ nav input:focus {
 .card {
     width: var(--lebar-card) !important;
     transition: 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 
+              0 8px 16px rgba(0, 0, 0, 0.1);
 }
 .card:hover {
     transform: translateY(-4px);
@@ -105,11 +108,45 @@ nav input:focus {
 /* ======================================================================== */
 
 
+
+
+
+.detail-produk {
+    width: 80%;
+}
+
+.co {
+    width: 100%;
+    height: fit-content;
+}
+
+
+.img-utama {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+.img-kecil {
+    width: 122px;
+    height: 125px;
+    object-fit: cover;
+}
+.img-co {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+
+
+
+
+
 @media screen and (max-width: 767px) { 
 
     .kotak-kategori {
-        width: 95px;
-        height: 95px;
+        width: 80px;
+        height: 80px;
     }
     .kotak-kategori img {
         width: 30px;
@@ -117,15 +154,32 @@ nav input:focus {
     }
     .promo {
         width: 100%;
+    }
+    .detail-produk {
+        width: 100%;
+    }
+    
+    .img-utama {
+        width: 300px;
+        height: 300px;
+    }
+    .img-kecil {
+        width: 100%;
+        height: 85px;
+    }
+    .img-co {
+        width: 100px;
+        height: 100px;
+    }
+    .co {
+        width: 100%;
+        height: fit-content;
+    
     }
  }
 
 
 @media screen and (min-width: 768px) and (max-width:991px){ 
-    .kotak-kategori {
-        width: 100px;
-        height: 100px;
-    }
     .kotak-kategori img {
         width: 30px;
         height: 30px;
@@ -136,7 +190,7 @@ nav input:focus {
  }
 
 
-@media screen and (min-width: 992px) and (max-width:1999px){ 
+@media screen and (min-width: 992px) and (max-width:1199px){ 
  .promo {
         width: 100%;
     }
@@ -144,10 +198,8 @@ nav input:focus {
 
 
 @media screen and (min-width: 1200px) and (max-width:1399px) { 
-
+    .promo {
+        width: 100% ;
+    }
  }
 
-
-@media screen and (min-width: 1400px) { 
-
- }
